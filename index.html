@@ -1,57 +1,78 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>Hiiiiii</title>
-<style>
-p {
-text-align: center;
-font-size: 32px;
-font-family: Candara, Oswald;
-}
-img {
-display: block;
-margin: 0 auto;
-width: 25%;
-}
-</style>
-</head>
-<body>
-<p>Can we hang out soon?</p>
-<img src="https://media.tenor.com/zGm5acSjHCIAAAAM/cat-begging.gif">
-</body>
-<title>Botões</title>
-<style>
-#botao1 {
-position: fixed;
-top: 70%;
-left: 55%;
-transform: translate(-50%, -50%);
-}
-#botao2 {
-position: absolute;
- left: 39%;
-  top: 68%;
-}
-</style>
-</head>
-<body>
-<button id="botao1">YES BBY!</button>
-<button id="botao2">NO</button>
-<script>
-const button2 = document.getElementById('botao2');
-let left = 40;
-button2.addEventListener('mouseover', function() {
-  if(left == 40){
-    left = 44;
-  }else{
-    left = 40;
-  }
-  this.style.left = left + '%';
-});
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hi Crush 😊</title>
+    <style>
+        body {
+            background-color: #ffe4e1;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
 
-</script>
-<script>document.getElementById('botao1').addEventListener('click', function() {
-alert('YAYY THANK U 😍❤️');
-});
-</script>
+        h1 {
+            font-size: 48px;
+            color: #ff69b4;
+        }
+
+        p {
+            font-size: 24px;
+            color: #ff1493;
+        }
+
+        img {
+            margin: 20px auto;
+            width: 30%;
+            border-radius: 15px;
+        }
+
+        #yesButton, #noButton {
+            font-size: 20px;
+            padding: 15px 30px;
+            margin: 10px;
+            cursor: pointer;
+            border: none;
+            border-radius: 10px;
+            transition: background-color 0.3s;
+        }
+
+        #yesButton {
+            background-color: #ff69b4;
+            color: white;
+        }
+
+        #noButton {
+            background-color: #ff1493;
+            color: white;
+        }
+
+        #yesButton:hover {
+            background-color: #ff1493;
+        }
+
+        #noButton:hover {
+            background-color: #ff69b4;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hi Crush 😊</h1>
+    <p>Would you like to grab a coffee with me sometime?</p>
+    <img src="https://media.giphy.com/media/3oz8xWII5Ezc7nZLiY/giphy.gif" alt="Cute gif">
+
+    <button id="yesButton">Yes, I'd love to!</button>
+    <button id="noButton">No, sorry 😔</button>
+
+    <script>
+        document.getElementById('yesButton').addEventListener('click', function() {
+            alert('Yay! I can\'t wait! 😊');
+        });
+
+        document.getElementById('noButton').addEventListener('click', function() {
+            alert('Aww, that\'s okay. Maybe another time! 😇');
+        });
+    </script>
 </body>
 </html>
