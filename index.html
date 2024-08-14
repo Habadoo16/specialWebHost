@@ -3,75 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hi Crush 😊</title>
+    <title>Hi 😊</title>
     <style>
         body {
-            background-color: #ffe4e1;
-            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background-color: #f0f8ff;
+            font-family: Arial, sans-serif;
             text-align: center;
             padding: 50px;
         }
 
         h1 {
-            font-size: 48px;
-            color: #ff69b4;
+            font-size: 40px;
+            color: #4682b4;
         }
 
         p {
-            font-size: 24px;
-            color: #ff1493;
+            font-size: 22px;
+            color: #5f9ea0;
+            margin: 20px 0;
         }
 
         img {
             margin: 20px auto;
             width: 30%;
-            border-radius: 15px;
+            border-radius: 10px;
         }
 
-        #yesButton, #noButton {
-            font-size: 20px;
-            padding: 15px 30px;
-            margin: 10px;
+        #noPressureButton {
+            font-size: 18px;
+            padding: 10px 25px;
+            margin-top: 20px;
             cursor: pointer;
             border: none;
             border-radius: 10px;
+            background-color: #87cefa;
+            color: white;
             transition: background-color 0.3s;
         }
 
-        #yesButton {
-            background-color: #ff69b4;
-            color: white;
-        }
-
-        #noButton {
-            background-color: #ff1493;
-            color: white;
-        }
-
-        #yesButton:hover {
-            background-color: #ff1493;
-        }
-
-        #noButton:hover {
-            background-color: #ff69b4;
+        #noPressureButton:hover {
+            background-color: #4682b4;
         }
     </style>
 </head>
 <body>
-    <h1>Hi Crush 😊</h1>
-    <p>Would you like to grab a coffee with me sometime?</p>
-    <img src="https://media.giphy.com/media/3oz8xWII5Ezc7nZLiY/giphy.gif" alt="Cute gif">
+    <h1>Hey, Just Wanted to Say Hi 😊</h1>
+    <p>I've been thinking about you, but I don't want you to feel pressured. Let's take things at our own pace.</p>
+    <img src="https://media.giphy.com/media/3o6Zt481isNVuQI1l6/giphy.gif" alt="Relaxing gif">
 
-    <button id="yesButton">Yes, I'd love to!</button>
-    <button id="noButton">No, sorry 😔</button>
+    <button id="noPressureButton">Thanks for Understanding 💙</button>
 
     <script>
-        document.getElementById('yesButton').addEventListener('click', function() {
-            alert('Yay! I can\'t wait! 😊');
-        });
-
-        document.getElementById('noButton').addEventListener('click', function() {
-            alert('Aww, that\'s okay. Maybe another time! 😇');
+        document.getElementById('noPressureButton').addEventListener('click', function() {
+            alert('No worries, take your time 😊');
         });
     </script>
 </body>
